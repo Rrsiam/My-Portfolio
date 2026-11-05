@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robayet Rowshan Siam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#hero" class="logo">RRS.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="Robayet_Rowshan_Siam_CV.pdf" target="_blank" class="btn btn-outline"
+                    style="padding: 0.5rem 1rem; font-size: 0.9rem;">Resume</a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+                <button id="mobile-menu-btn" class="mobile-only"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="section">
+        <div class="container hero-content">
+            <img src="rrs.jpeg" alt="Robayet Rowshan Siam" class="profile-img animate-on-scroll">
+
+            <h1 class="animate-on-scroll">Robayet Rowshan Siam</h1>
+            <h2 class="animate-on-scroll">CSE Undergraduate | AI/ML Enthusiast & Web Developer</h2>
+            <p class="animate-on-scroll">Exploring Reinforcement Learning & Explainable AI</p>
+            <div class="hero-btns animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content animate-on-scroll">
+                <p>I'm a final-year Computer Science and Engineering student at United International University,
+                    expecting to graduate in February 2027. My current focus is on machine learning, reinforcement
+                    learning, and explainable AI — I'm particularly drawn to the question of not just <em>what</em> a
+                    model decides, but <em>why</em>, and how we can make intelligent systems more transparent and
+                    trustworthy.</p>
+                <p>Alongside this, I build web applications and enjoy turning ideas into working products. I'm currently
+                    looking for an internship where I can contribute to real-world ML or full-stack projects while
+                    continuing to learn from experienced engineers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Technical Skills</h2>
+            <div class="skills-grid animate-on-scroll">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <p>Python, Java, C, C++, PHP, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-brain"></i> AI / ML</h3>
+                    <p>Scikit-learn, Librosa, Whisper, DeepFace, SHAP, Stable-Baselines3, PyTorch, NumPy, Pandas,
+                        Matplotlib</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-globe"></i> Web & DB</h3>
+                    <p>HTML, CSS, React, Node.js, FastAPI, MySQL, Supabase</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <p>Git, GitHub, VS Code, Kaggle, Google Colab, Overleaf, Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research (FYDP) Section -->
+    <section id="research" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Final Year Research (FYDP)</h2>
+
+            <div class="research-card animate-on-scroll">
+                <div class="research-info">
+                    <h3>Explainable Reinforcement Learning for Clinical Decision Support</h3>
+                    <p class="research-domain">Healthcare AI | Offline RL | Explainable AI (XAI)</p>
+
+                    <p>My thesis develops a Clinical Decision Support System (CDSS) for Type 2 Diabetes management using
+                        patient timelines from the MIMIC-IV database. The system uses a <strong>Longitudinal Health
+                            Trajectory Engine</strong> to track biomarker velocities, moving averages, and trend
+                        directions.</p>
+
+                    <p>To avoid the "Imitation Trap" of standard supervised models, I implemented an <strong>Offline
+                            Discrete Conservative Q-Learning (CQL)</strong> agent to recommend proactive monitoring
+                        intervals. The system pairs this with a <strong>SHAP-based explainability module</strong> that
+                        converts complex Q-values into natural-language clinical justifications and feeds them into an
+                        interactive clinician-in-the-loop dashboard.</p>
+
+                    <div class="tags" style="margin-top: 1rem;">
+                        <span>PyTorch</span><span>Discrete
+                            CQL</span><span>MIMIC-IV</span><span>SHAP</span><span>FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="research-results">
+                    <h4><i class="fas fa-chart-line"></i> Benchmark Results</h4>
+                    <p class="results-sub">Outperforming standard ML and Offline RL baselines on unseen patients.</p>
+
+                    <div class="result-bar">
+                        <div class="result-label">
+                            <span>Discrete CQL (Ours)</span>
+                            <span>63.01% Acc</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 63.01%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="result-bar">
+                        <div class="result-label">
+                            <span>Discrete BCQ</span>
+                            <span>43.22% Acc</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill bg-grey" style="width: 43.22%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="result-bar">
+                        <div class="result-label">
+                            <span>XGBoost (Supervised)</span>
+                            <span>36.35% Acc</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill bg-grey" style="width: 36.35%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="result-bar">
+                        <div class="result-label">
+                            <span>Behavioral Cloning</span>
+                            <span>35.16% Acc</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill bg-grey" style="width: 35.16%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Achievements & Scholarships</h2>
+
+            <div class="achievements-grid animate-on-scroll">
+                <!-- 50% Scholarship -->
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <div class="achievement-content">
+                        <h3>50% Academic Merit Scholarship</h3>
+                        <p class="achievement-meta">Awarded for 5 Trimesters (2024 – 2026)</p>
+                        <p>Consistently awarded a 50% tuition scholarship by United International University for
+                            maintaining outstanding academic results (Pre-Trimester standing).</p>
+
+                        <button class="btn btn-outline achievement-btn"
+                            onclick="openGallery('50% Academic Scholarship Proofs', ['waivers & scholarships/501.png', 'waivers & scholarships/502.png', 'waivers & scholarships/503.png', 'waivers & scholarships/504.png', 'waivers & scholarships/505.png'])">
+                            <i class="fas fa-images"></i> View 50% Waivers & Scholarships Documents
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 25% Waiver -->
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <div class="achievement-content">
+                        <h3>25% Academic Tuition Waiver</h3>
+                        <p class="achievement-meta">Awarded for 5 Trimesters (2023 – 2026)</p>
+                        <p>Received a 25% tuition waiver across multiple consecutive trimesters in recognition of strong
+                            academic performance and consistency.</p>
+
+                        <button class="btn btn-outline achievement-btn"
+                            onclick="openGallery('25% Tuition Waiver Proofs', ['waivers & scholarships/251.png', 'waivers & scholarships/252.png', 'waivers & scholarships/253.png', 'waivers & scholarships/254.png', 'waivers & scholarships/255.png'])">
+                            <i class="fas fa-images"></i> View 25% Waivers & Scholarships Documents
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Special Waiver -->
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <div class="achievement-content">
+                        <h3>Special Recognition Waiver</h3>
+                        <p class="achievement-meta">Summer 2024</p>
+                        <p>Awarded a special 25% tuition waiver for active participation and contribution to the
+                            Anti-Discrimination Movement.</p>
+
+                        <button class="btn btn-outline achievement-btn"
+                            onclick="openGallery('Special Waiver Proof', ['waivers & scholarships/sp.png'])">
+                            <i class="fas fa-image"></i> View Special Waiver's Documents
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROOF MODAL — CAROUSEL (1 image per slide) -->
+    <div id="proofModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeGallery()" aria-label="Close">&times;</span>
+            <h3 id="modalTitle" class="proof-title">Proofs</h3>
+
+            <div class="proof-carousel">
+                <button class="proof-nav prev" id="proof-prev" aria-label="Previous proof">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="proof-viewport">
+                    <div class="proof-track" id="proof-track"></div>
+                </div>
+
+                <button class="proof-nav next" id="proof-next" aria-label="Next proof">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="proof-footer">
+                <div class="proof-counter" id="proof-counter">1 / 1</div>
+                <div class="proof-dots" id="proof-dots"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+
+            <div class="carousel-wrapper animate-on-scroll" id="project-carousel">
+                <button class="carousel-btn prev" id="proj-prev" aria-label="Previous projects">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="project-track">
+
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>TigerLLM Bengali Medical QA</h3>
+                                    <p class="project-role">Research & Fine-Tuning</p>
+                                    <p>Fine-tuned TigerLLM-1B for Bengali medical question answering using QLoRA on a
+                                        Kaggle T4 GPU. Prepared the 901-pair dataset, configured training, and deployed
+                                        a Gradio web app.</p>
+                                    <div class="tags">
+                                        <span>Python</span><span>QLoRA</span><span>Hugging
+                                            Face</span><span>Gradio</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://huggingface.co/spaces/ViteMamba/TigerLLM-Medical-Bengali"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                        <a href="https://github.com/ejaz-uddin-swaron/tigerlm-bangla-mcq-benchmark"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>AI Confidence Coach</h3>
+                                    <p class="project-role">Multimodal ML System</p>
+                                    <p>Built an end-to-end system predicting speaking confidence from 34 audio features
+                                        (Librosa, Whisper) fused with DeepFace. Trained a Random Forest (Pearson
+                                        r=0.973) and implemented SHAP explanations &amp; PPO coaching.</p>
+                                    <div class="tags">
+                                        <span>Scikit-learn</span><span>SHAP</span><span>PPO</span><span>FastAPI</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Rafayet-Hossen/AI-Confidence-Coach"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>MeramotHub</h3>
+                                    <p class="project-role">Full-Stack Web Platform</p>
+                                    <p>A local service booking platform connecting customers with verified workers.
+                                        Implemented role-based dashboards, location search, escrow payments, and a
+                                        Groq-powered AI chatbot.</p>
+                                    <div class="tags">
+                                        <span>React</span><span>Node.js</span><span>Supabase</span><span>Tailwind</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://meramot-hub-frontend.vercel.app/" target="_blank"><i
+                                                class="fas fa-external-link-alt"></i> Live Demo</a>
+                                        <a href="https://github.com/ViteMamba/MeramotHub" target="_blank"><i
+                                                class="fab fa-github"></i> Backend</a>
+                                        <a href="https://github.com/tahsinX/MeramotHub-Frontend" target="_blank"><i
+                                                class="fab fa-github"></i> Frontend</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>RideSafety</h3>
+                                    <p class="project-role">HCI Research &amp; Prototype</p>
+                                    <p>Designed a safety app for women in Dhaka using user-centered research (N=16
+                                        survey, 2 interviews). Created a 13-screen high-fidelity Figma prototype with
+                                        offline SMS fallback and route alerts.</p>
+                                    <div class="tags">
+                                        <span>Figma</span><span>HCI</span><span>UX Research</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://www.figma.com/proto/6fNQncSTfwC0Z7PbjiWp30/Academic-Projects?node-id=1438-795"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i> Figma Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="proj-next" aria-label="Next projects">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-dots" id="project-dots"></div>
+
+            <h3 class="section-subtitle animate-on-scroll" style="margin-top: 4rem;">More Projects</h3>
+            <div class="projects-grid-small animate-on-scroll">
+                <div class="project-card-small">
+                    <h4>JobLink</h4>
+                    <p>Web-based job portal for local employers and seekers. Built with HTML, CSS, JS, PHP, MySQL.</p>
+                    <a href="https://github.com/Rrsiam/JobLink" target="_blank"><i class="fab fa-github"></i> View
+                        Repo</a>
+                </div>
+                <div class="project-card-small">
+                    <h4>Algorithm Quest</h4>
+                    <p>Multiplayer JavaFX game visualizing BFS, Bubble Sort, and Linear Search using sockets.</p>
+                    <a href="https://github.com/Rrsiam/Algorithm-Quest" target="_blank"><i class="fab fa-github"></i>
+                        View Repo</a>
+                </div>
+                <div class="project-card-small">
+                    <h4>HaChar ManaRes</h4>
+                    <p>Disaster response &amp; community management platform for Haor/Char regions. SRS &amp; Figma
+                        prototypes.</p>
+                    <a href="https://www.figma.com/proto/6fNQncSTfwC0Z7PbjiWp30/Academic-Projects?node-id=492-835"
+                        target="_blank"><i class="fas fa-external-link-alt"></i> Figma</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Certifications &amp; Activities</h2>
+
+            <div class="tab-container animate-on-scroll">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="ai">AI &amp; Data</button>
+                <button class="tab-btn" data-filter="cyber">Cybersecurity</button>
+                <button class="tab-btn" data-filter="hackathon">Hackathons</button>
+                <button class="tab-btn" data-filter="badges">Badges</button>
+            </div>
+
+            <div class="cert-grid animate-on-scroll">
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-ai-career-edge.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>AI Career Edge</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-ai-powered-communication.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>AI-Powered Communication</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-data-foundations-with-ai.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Data Foundations with AI</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-network-smarter-with-ai.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Network Smarter with AI</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-art-of-communication.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Art of Communication</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-corporate-presentation-skills.pdf"
+                    target="_blank" rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Corporate Presentation Skills</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-personal-branding-in-ai-era.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Personal Branding in AI Era</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-sharpen-your-interview-skills.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Sharpen Your Interview Skills</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-linkedin-101.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>LinkedIn 101</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="ai" href="certificates/certificate-smart-cv.pdf" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Smart CV</h4>
+                    <p>Grameenphone Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="cyber" href="certificates/Certificate_Cybersecurity for Engineers - Robayet Rowshan Siam.pdf"
+                    target="_blank" rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Cybersecurity for Engineers</h4>
+                    <p>Cisco / UIU CENTeR</p>
+                </a>
+
+                <a class="cert-card" data-category="cyber" href="certificates/Introduction_to_Cybersecurity_certificate_rrsiam6-gmail-com_d3ef047f-03bf-4645-8595-7fd6d7964252.pdf"
+                    target="_blank" rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Introduction to Cybersecurity</h4>
+                    <p>Cisco Networking Academy</p>
+                </a>
+
+                <a class="cert-card" data-category="cyber" href="certificates/Junior_Cybersecurity_Analyst_Career_Path_certificate_rrsiam6-gmail-com_653e076f-97a3-4b20-a330-c32f585953ae.pdf"
+                    target="_blank" rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Cybersecurity Essentials</h4>
+                    <p>Cisco / UIU</p>
+                </a>
+
+                <a class="cert-card" data-category="hackathon" href="certificates/RACDOX_Hackathon_Certificate.jpeg" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>RACDOX Hackathon</h4>
+                    <p>Participant | Sep 2026</p>
+                </a>
+
+                <a class="cert-card" data-category="badges"
+                    href="https://www.credly.com/badges/484f75c1-cf43-4f2b-a6d1-a7b231d35f3b/public_url" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Credly Badge 1</h4>
+                    <p>Credly Verified · Replace with badge name</p>
+                </a>
+
+                <a class="cert-card" data-category="badges"
+                    href="https://www.credly.com/badges/c8883c5b-3b0b-4582-a746-521f07d7256f/public_url" target="_blank"
+                    rel="noopener">
+                    <span class="cert-view"><i class="fas fa-up-right-from-square"></i></span>
+                    <h4>Credly Badge 2</h4>
+                    <p>Credly Verified · Replace with badge name</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            <p class="animate-on-scroll" style="text-align: center; margin-bottom: 2rem;">I'm currently looking for
+                internship opportunities. Feel free to reach out!</p>
+
+            <div class="contact-links animate-on-scroll">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rrsiam6@gmail.com" target="_blank" rel="noopener" class="contact-item">
+                    <i class="fas fa-envelope"></i> rrsiam6@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/rrsiam/" target="_blank" class="contact-item"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Rrsiam" target="_blank" class="contact-item"><i class="fab fa-github"></i>
+                    GitHub</a>
+                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Gazipur, Dhaka, Bangladesh</span>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Robayet Rowshan Siam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
